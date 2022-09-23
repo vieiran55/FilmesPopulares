@@ -1,0 +1,10 @@
+@import "styles/variaveis.scss";
+
+.titulo{
+        &__texto{
+            margin: 1em 0;
+            text-align: center;
+            color: $white;
+            font-size: 36px;
+        }
+    }

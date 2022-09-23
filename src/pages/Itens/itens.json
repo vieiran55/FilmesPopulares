@@ -1,0 +1,51 @@
+[
+    {
+        "title": "Avatar (2009)",
+        "description": "No exuberante mundo alienígena de Pandora vivem os Na'vi, seres que parecem ser primitivos, mas são altamente evoluídos. Jake Sully, um ex-fuzileiro naval paralítico, volta a andar através de um avatar e se apaixona por uma Na'vi..",
+        "photo": "/assets/filmes/avatar.svg",
+        "rating": 9.5,
+        "id": 1
+    },
+    {
+        "title": "Avengers Age of Ultron (2015)",
+        "description": "Ao tentar proteger o planeta de ameaças, Tony Stark constrói um sistema de inteligência artificial que cuidaria da paz mundial. O projeto acaba dando errado e gera o nascimento do Ultron. Com o destino da Terra em jogo, os Vingadores terão que se unir para mais uma vez salvar a raça humana da extinção.",
+        "photo": "/assets/filmes/avengerAgeOfUtron.svg",
+        "rating": 9.0,
+        "id": 2
+    },
+    {
+        "title": "Avengers (2012)",
+        "description": "Loki, o irmão de Thor, ganha acesso ao poder ilimitado do cubo cósmico ao roubá-lo de dentro das instalações da S.H.I.E.L.D. Nick Fury, o diretor desta agência internacional que mantém a paz, logo reúne os únicos super-heróis que serão capazes de defender a Terra de ameaças sem precedentes",
+        "photo": "/assets/filmes/avengers.svg",
+        "rating": 9.2,
+        "id": 3
+    },
+    {
+        "title": "Avengers Endgame (2019)",
+        "description": "Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço sem água e comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco.",
+        "photo": "/assets/filmes/avengersEndGame.svg",
+        "rating": 9.7,
+        "id": 4
+    },
+    {
+        "title": "Avengers Infinity War (2018)",
+        "description": "Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater seu inimigo mais poderoso, o maligno Thanos. Em uma missão para coletar todas as seis pedras infinitas, Thanos planeja usá-las para infligir sua vontade maléfica sobre a realidade.",
+        "photo": "/assets/filmes/avengersInfiniteWar.svg",
+        "rating": 9.6,
+        "id": 5
+    },
+    {
+        "title": "Batman (2022)",
+        "description": "Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece como a personificação da vingança para a população.",
+        "photo": "/assets/filmes/batman.svg",
+        "rating": 9.4,
+        "id": 6
+    },
+    {
+        "title": "Doctor Stranger in the Multiverse of Madness (2022)",
+        "description": "Doutor Estranho rumo ao desconhecido recebe ajuda de novos aliados místicos e outros já conhecidos do público, o personagem atravessa as realidades alternativas incompreensíveis e perigosas do Multiverso para enfrentar um novo e misterioso adversário.",
+        "photo": "/assets/filmes/doctorEstranger.svg",
+        "rating": 8.5,
+        "id": 7
+    }
+]

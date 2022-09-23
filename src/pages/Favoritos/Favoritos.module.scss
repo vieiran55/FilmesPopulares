@@ -1,0 +1,19 @@
+.favoritos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    input{
+        margin: auto 1em;
+        height: 18px;
+        width: 18px;
+        background-color: #17162E;
+    }
+    &__check{
+        margin: auto 0.5em;
+        color: #706EA8;
+    }
+    &__texto{
+        color: #FFFFFF;
+        size: 18px;
+    }
+}
