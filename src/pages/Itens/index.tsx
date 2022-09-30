@@ -21,6 +21,8 @@ export default function Itens(props: Props){
             setLista(novaLista)
             },[busca])
 
+    
+
     return (
         <div className={styles.itens}>
             {

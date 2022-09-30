@@ -1,6 +1,7 @@
 import Buscador from "pages/Buscador"
+import Favoritos from "pages/Favoritos";
 import Itens from "pages/Itens";
-import { useState } from "react"
+import { SetStateAction, useState } from "react"
 import styles from "./Filmes.module.scss"
 
 export default function Filmes(){
@@ -12,6 +13,9 @@ export default function Filmes(){
                 <h1 className={styles.titulo__texto}>Filmes Populares</h1>
                 <section>
                 <Buscador busca={busca} setBusca={setBusca}/>
+                <Favoritos filtro={""} setFiltro={function (value: SetStateAction<string>): void {
+                        throw new Error("Function not implemented.");
+                    } } />
                 </section>
             </div>
             <div>
