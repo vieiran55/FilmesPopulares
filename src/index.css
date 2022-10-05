@@ -10,4 +10,24 @@ body{
 *{
   box-sizing: border-box;
   font-family: 'Kumbh Sans', sans-serif;
+  align-items: center;
+}
+
+@media (max-width: 380px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vh;
+    height: 100vh;
+  }
+  @media (max-width:768px) {
+    body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100vh;
+      height: 100vh;
+    }
+  }
 }

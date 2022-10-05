@@ -9,11 +9,32 @@
     text-align: justify;
     border-radius: 8px;
     box-shadow: 32.8387px 24.5482px 79px rgba(0, 0, 0, 0.15), 23.8851px 17.855px 53.2479px rgba(0, 0, 0, 0.121406), 16.6246px 12.4276px 34.4391px rgba(0, 0, 0, 0.10125), 10.9035px 8.15079px 21.3701px rgba(0, 0, 0, 0.0867188), 6.56775px 4.90965px 12.8375px rgba(0, 0, 0, 0.075), 3.46346px 2.58907px 7.6377px rgba(0, 0, 0, 0.0632813), 1.4367px 1.07399px 4.56719px rgba(0, 0, 0, 0.04875), 0.333519px 0.249318px 2.42246px rgba(0, 0, 0, 0.0285938);
+
+    @media (max-width: 768px) {
+        padding: 15px;
+        width: 90%;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (max-width: 380px) {
+        padding: 15px;
+        width: 79%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }  
+
     &__imagem{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        @media (max-width: 768px) {
+            margin: 1px;
+        }
     }
     &__avatar{
         width: 150px;
@@ -26,11 +47,20 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        @media (max-width: 768px) {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
     }
     &__titulo{
         text-align: center;
         color: white;
         size: 18px;
+        @media (max-width: 768px) {
+            width: 10em;
+            font-size: 40px;
+        }
     }
     &__header{
         display: flex;
@@ -39,6 +69,9 @@
         align-items: center;
         width: 30%;
         margin: 2.5em 1em;
+        @media (max-width: 768px) {
+            margin: 1em 1em;
+        }
     }
     &__tags{
         display: flex;
@@ -46,6 +79,14 @@
         align-items: center;
         color: white;
         size: 18px;
+        @media (max-width: 768px) {
+            width: 10em;
+            font-size: 35px;
+        }
+        @media (min-width: 380px) {
+            width: 13em;
+            font-size: 27px;
+        }
     }
     &__favorito{
         margin: 0.5em;
@@ -60,6 +101,22 @@
         width: 43em;
         color: #ACACAC;
         margin: 1em 3em;
+        @media (max-width: 768px) {
+            line-height: 45px;
+            font-size: 25px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 14px;
+        }
+        @media (min-width: 380px) {
+            line-height: 45px;
+            font-size: 19px;
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: 14px;
+        }
 
     }
     &__star{
@@ -67,7 +124,18 @@
         background-repeat: no-repeat;
         background-position: center;
         margin: 0.5em;
-        padding: 10px;       
+        padding: 10px;
+        @media (max-width: 768px) {
+            margin: 15px;
+            padding: 0px 0px 0px 45px;
+            background-size: 45px;
+        }
+        @media (min-width: 380px) {
+            margin: 6px;
+            padding: 4px 0px 0px 45px;
+            background-size: 29px;
+        }
+      
     }
     &__heart{
         background-image: url("Heart.svg");
@@ -75,6 +143,16 @@
         background-position: center;
         margin: 0.5em;
         padding: 13px;
+        @media (max-width: 768px) {
+            margin: 15px;
+            padding: 0px 0px 0px 45px;
+            background-size: 45px;
+        }
+        @media (min-width: 380px) {
+            margin: 6px;
+            padding: 4px 0px 0px 45px;
+            background-size: 29px;
+        }
         &:hover{
             cursor: pointer;
         }
