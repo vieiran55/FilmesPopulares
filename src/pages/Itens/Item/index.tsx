@@ -28,8 +28,9 @@ interface Opcoes {
 
 export default function Item(props: Props) {
     
-    const { title, description, photo, rating, id, overview, vote_average, poster_path} = props;
+    const { title, description, photo, rating, id, overview, vote_average, poster_path, repositorio} = props;
     const [like, setLike] = useState(false)
+    // const [fav, setFav] = useState(JSON.parse(localStorage.getItem('fav') || "[]"))
     const API_KEY = process.env.REACT_APP_API_KEY
     const image = `https://image.tmdb.org/t/p/w500/${poster_path}`
 
@@ -45,18 +46,19 @@ export default function Item(props: Props) {
             console.log(movies)
             localStorage.setItem('fav', JSON.stringify(movies))
                   movies = localStorage.setItem('fav', JSON.stringify(movies))
-                  return movies
-        } else {
-            const mopa = JSON.parse(localStorage.getItem('fav') || "[]")
-            let findMovie = {
-                title: title,
-              } 
-            findMovie = mopa.find((movie: { title: string; id: number}) => movie.title === title &&  movie.id === id)
-            const newMovies = mopa.filter((movie: { title: string; }) => movie.title !== (findMovie.title))
-            console.log(newMovies)
-            localStorage.setItem('fav', JSON.stringify(newMovies))
-        }
-      })
+                    return movies
+        } 
+        // else {
+        //     const mopa = JSON.parse(localStorage.getItem('fav') || "[]")
+        //     let findMovie = {
+        //         title: title,
+        //       } 
+        //     findMovie = mopa.find((movie: { title: string; id: number}) => movie.title === title &&  movie.id === id)
+        //     const newMovies = mopa.filter((movie: { title: string; }) => movie.title !== (findMovie.title))
+        //     console.log(newMovies)
+        //     localStorage.setItem('fav', JSON.stringify(newMovies))
+        // }
+      },[id, like, title])
 
     return (
 
@@ -79,7 +81,7 @@ export default function Item(props: Props) {
                                 <span
                                     onClick={() => setLike(!like)}
                                     className={classNames({
-                                        [styles.item__heart]: true,
+                                        [styles.item__heart]: true ,
                                         [styles["item__heart--ativo"]]: like,
                                     })}>
                                     {/* <FcLikePlaceholder /> */}

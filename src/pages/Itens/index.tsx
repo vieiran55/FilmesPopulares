@@ -2,6 +2,7 @@ import styles from './Itens.module.scss'
 import filmes from './itens.json'
 import { useEffect, useState } from 'react'
 import Item from './Item'
+import Favoritos from 'pages/Favoritos';
 
 interface Props {
     busca: string;

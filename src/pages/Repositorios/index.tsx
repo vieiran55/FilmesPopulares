@@ -25,7 +25,7 @@ export default function Repositorios({repositorio, setRepositorio}: Props) {
         // utilizamos uma função async
         async function carregaRepositorios() {
             //api do site z
-            const resposta = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_FILMES_API_KEY}&language=en-US`);
+            const resposta = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_FILMES_API_KEY}&language=pt-BR`);
             //retornando o json da api
             const { results } = await resposta.json();
             setRepositorio(results)
@@ -38,4 +38,3 @@ export default function Repositorios({repositorio, setRepositorio}: Props) {
         <div></div>
     )
 }
-

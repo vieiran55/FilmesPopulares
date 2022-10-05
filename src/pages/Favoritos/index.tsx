@@ -2,6 +2,7 @@ import styles from './Favoritos.module.scss'
 import filmes from './itens.json'
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import like from "pages/Itens/Item"
+import { useState } from 'react';
 
 interface Props {
     filtro: string;
@@ -10,9 +11,7 @@ interface Props {
 
 
 export default function Favoritos({ filtro, setFiltro }: Props) {
-
-    var storage = localStorage.getItem("fav")
-
+    const [storage, setStorage] = useState(localStorage.getItem('fav') || [])
     return (
     
         <div className={styles.favoritos}>

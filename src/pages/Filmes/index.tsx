@@ -30,9 +30,6 @@ export default function Filmes(){
                 <h1 className={styles.titulo__texto}>Filmes Populares</h1>
                 <section>
                 <Buscador busca={busca} setBusca={setBusca} />
-                <Favoritos filtro={""} setFiltro={function (value: SetStateAction<string>): void {
-                        throw new Error("Function not implemented.");
-                    } } />
                 </section>
             </div>
             <div>
